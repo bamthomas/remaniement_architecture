@@ -1,0 +1,22 @@
+Présentation pour l'agile conférence http://conf.agile-france.org/ du remaniement d'architecture.
+
+Le remaniement de code (refactoring) permet de changer la structure d'une application de manière incrémentale et de faire émerger un design adapté au contexte, tout en assurant la continuité de son fonctionnement grâce aux tests automatiques. C'est une condition nécessaire pour continuer de livrer des évolutions avec un rythme stable et un nombre de fonctionnalités croissant. C'est en quelque sorte le Kaizen du code.
+
+Par ailleurs, le travail du développeur porte de plus en plus à faire évoluer des applications déjà existantes avec une base de code importante. Nous devons faire vivre du logiciel "âgé".
+
+Pour franchir un palier important en terme d'objectif de charge, évolutions fonctionnelles, ou d'environnement, il est parfois nécessaire d'opérer des refontes de la structure même de l'application en conservant ses fonctionnalités. Il faut alors envisager des changements radicaux, c'est le Kaikaku.
+
+Nous avons par exemple inversé le fonctionnement d'une application de gestion dynamique d'appels téléphoniques pour passer d'une structure centrée sur le noyau vers du client-serveur en voice XML en 1 mois avec 100 000 lignes de code Java. Nous avons aussi changé toute la couche de statistique d'une application de 160000 lignes Java en mettant en place un bus de données AMQP à la place d'une solution maison.
+
+Nous verrons ensemble grâce à 3 expériences sur des projets existants :
+
+    comment nous avons identifié les cas où l'approche incrémentale ne suffirait pas
+    le contexte nécessaire à la mise en oeuvre de cette rupture
+    par quels moyens nous y sommes parvenus
+    une rupture pour quels résultats ? Qu'avons nous appris de ces changements ?
+    des pistes de patterns et anti-patterns (extraction, fusion, fusion-extraction de modules...)
+
+Ceci en conservant une approche empirique, basée sur les tests, et un travail collaboratif.
+
+Cette présentation de Bruno Thomas et Jean-Philippe Caruana vous donnera des clés pour franchir plus en douceur la prochaine étape importante dans la vie de votre logiciel.
+
