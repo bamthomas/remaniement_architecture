@@ -10,11 +10,11 @@ Nous avons par exemple inversé le fonctionnement d'une application de gestion d
 
 Nous verrons ensemble grâce à 3 expériences sur des projets existants :
 
-    comment nous avons identifié les cas où l'approche incrémentale ne suffirait pas
-    le contexte nécessaire à la mise en oeuvre de cette rupture
-    par quels moyens nous y sommes parvenus
-    une rupture pour quels résultats ? Qu'avons nous appris de ces changements ?
-    des pistes de patterns et anti-patterns (extraction, fusion, fusion-extraction de modules...)
+  * comment nous avons identifié les cas où l'approche incrémentale ne suffirait pas
+  * le contexte nécessaire à la mise en oeuvre de cette rupture
+  * par quels moyens nous y sommes parvenus
+  * une rupture pour quels résultats ? Qu'avons nous appris de ces changements ?
+  * des pistes de patterns et anti-patterns (extraction, fusion, fusion-extraction de modules...)
 
 Ceci en conservant une approche empirique, basée sur les tests, et un travail collaboratif.
 
