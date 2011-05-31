@@ -8,15 +8,15 @@
   <style type="text/css">
     body {
       margin-top: 1.0em;
-      background-color: #000;
+      background-color: #fff;
       font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
+      color: #000;
     }
     #container {
       margin: 0 auto;
       width: 700px;
     }
-    h1 { font-size: 3.8em; color: #e29a4e; margin-bottom: 3px; }
+    h1 { font-size: 2em; color: #e29a4e; margin-bottom: 3px; }
     h1 .small { font-size: 0.4em; }
     h1 a { text-decoration: none }
     h2 { font-size: 1.5em; color: #e29a4e; }
@@ -48,40 +48,52 @@
 
   <div id="container">
 
-    <div class="download">
-      <a href="http://github.com/bamthomas/remaniement_architecture/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/bamthomas/remaniement_architecture/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="http://github.com/bamthomas/remaniement_architecture">remaniement_architecture</a>
-      <span class="small">by <a href="http://github.com/bamthomas">bamthomas</a></span></h1>
+    <h1><a href="http://github.com/bamthomas/remaniement_architecture">Remaniement d'architecture</a> </h1>
 
     <div class="description">
-      Présentation pour Agile Conférence autour du remaniement d'architecture
+      Présentation du remaniement d'architecture
     </div>
 
-    <h2>Authors</h2>
-<p>Bruno Thomas (bthomas@barreverte.fr)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Bruno Thomas (bruno@barreverte.fr)<br/>      </p>
+    <h2>Contacts</h2>
+    <ul>
+    <li>Bruno Thomas (bruno@barreverte.fr)</li>
+    <li>Jean-Philippe Caruana (jp@barreverte.fr)</li>
+    </ul>
 
 
-    <h2>Download</h2>
+    <h2>License</h2>
+    <p>Tous les contenus de cette présentation sont en <a href="http://creativecommons.org/licenses/by-sa/2.0/fr/"><img style="border: 0;vertical-align:middle;" src="./CC-BY-SA.png" alt="Creative Commons - Paternité - Partage à l'Identique" /></a>
+
+    <h2>Téléchargements</h2>
     <p>
-      You can download this project in either
-      <a href="http://github.com/bamthomas/remaniement_architecture/zipball/master">zip</a> or
-      <a href="http://github.com/bamthomas/remaniement_architecture/tarball/master">tar</a> formats.
+      Vous pouvez télécharger le source de cette présentation dans les formats 
+      <a href="http://github.com/bamthomas/remaniement_architecture/zipball/master">zip</a> ou
+      <a href="http://github.com/bamthomas/remaniement_architecture/tarball/master">tar</a>.
     </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/bamthomas/remaniement_architecture</pre>
+    <p>Vous pouvez également cloner le projet avec <a href="http://git-scm.com">Git</a>
+	avec le lien sur github ici : <a href="http://github.com/bamthomas/remaniement_architecture">bamthomas/remaniement_architecture</a>.
     </p>
+    <h2>Résumé</h2>
+    <p>Le remaniement de code (refactoring) permet de changer la structure d'une application de manière incrémentale et de faire émerger un design adapté au contexte, tout en assurant la continuité de son fonctionnement grâce aux tests automatiques. C'est une condition nécessaire pour continuer de livrer des évolutions avec un rythme stable et un nombre de fonctionnalités croissant. C'est en quelque sorte le Kaizen du code.</p>
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/bamthomas/remaniement_architecture">bamthomas/remaniement_architecture</a>
-    </div>
+<p>Par ailleurs, le travail du développeur porte de plus en plus à faire évoluer des applications déjà existantes avec une base de code importante. Nous devons faire vivre du logiciel "âgé".</p>
+
+<p>Pour franchir un palier important en terme d'objectif de charge, évolutions fonctionnelles, ou d'environnement, il est parfois nécessaire d'opérer des refontes de la structure même de l'application en conservant ses fonctionnalités. Il faut alors envisager des changements radicaux, c'est le Kaikaku.</p>
+
+<p>Nous avons par exemple inversé le fonctionnement d'une application de gestion dynamique d'appels téléphoniques pour passer d'une structure centrée sur le noyau vers du client-serveur en voice XML en 1 mois avec 100 000 lignes de code Java. Nous avons aussi changé toute la couche de statistique d'une application de 160000 lignes Java en mettant en place un bus de données AMQP à la place d'une solution maison.</p>
+
+<p>Nous verrons ensemble grâce à 3 expériences sur des projets existants :<p>
+<ul>
+  <li>comment nous avons identifié les cas où l'approche incrémentale ne suffirait pas</li>
+  <li>le contexte nécessaire à la mise en oeuvre de cette rupture</li>
+  <li>par quels moyens nous y sommes parvenus</li>
+  <li>une rupture pour quels résultats ? Qu'avons nous appris de ces changements ?</li>
+  <li>des pistes de patterns et anti-patterns (extraction, fusion, fusion-extraction de modules...)</li>
+</ul>
+<p>Ceci en conservant une approche empirique, basée sur les tests, et un travail collaboratif.</p>
+
+<p>Cette présentation de Bruno Thomas et Jean-Philippe Caruana vous donnera des clés pour franchir plus en douceur la prochaine étape importante dans la vie de votre logiciel.</p>
+
 
   </div>
 
