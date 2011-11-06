@@ -2,39 +2,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
 	<head>
-		<title>Remaniement d'architecture</title>
+		<title>Architecture Refactoring - Dramatical changes</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="copyright" content= "&#169; 2011 Bruno Thomas & Jean Philippe Caruana (jp@barreverte.fr, bruno@barreverte.fr) - licence cc by sa" />
 		<meta name="duration" content="50" />
-		<link rel="stylesheet" href="./styles/slidy.css" type="text/css" />
-		<link rel="stylesheet" href="./styles/zen.css" type="text/css" />
-		<script src="./scripts/slidy.js" charset="utf-8" type="text/javascript"></script>
+		<link rel="stylesheet" href="../styles/slidy.css" type="text/css" />
+		<link rel="stylesheet" href="../styles/zen.css" type="text/css" />
+		<script src="../scripts/slidy.js" charset="utf-8" type="text/javascript"></script>
 	</head>
 	<body>
 		<div class="slide">
-			<h1>Remaniement d'achitecture</h1>
-			<p><em>Des clés pour franchir plus en douceur la prochaine étape importante dans la vie de votre logiciel</em></p>
+			<h1>Architecture Refactoring - Dramatical changes</h1>
+			<p><em>Keys to go through the next important step in the lifecyle of your application</em></p>
 			<div class="bottom">
-				<p>Développeurs agiles chez Orange - Multimedia Business Services</p>
+				<p>Orange - Multimedia Business Services</p>
 				<ul>
 					<li>Bruno Thomas</li>
 					<li>Jean-Philippe Caruana</li>
 				</ul>
-				<p>Co-animateurs du blog <a href="http://barreverte.fr">barre verte !</a>
+				<p>Blog <a href="http://barreverte.fr">barre verte !</a> (french)
 			</div>
 		</div>
 		<div class="slide">
-			<h1>Héritage (Legacy)</h1>
+			<h1>Legacy</h1>
 			<p>Living and working with aging software -- Ralph Johnson QCon 2010</p>
 			<ul>
-				<li>Ancien code : difficile à comprendre &amp; modifier</li>
+				<li>Legacy code : hard to understand &amp; modify</li>
 				<li>"Root Canal v.s. Flossing"</li>
 			</ul>
 		</div>
 		<div class="slide">
 			<h1>Architecture</h1>
 			<div class="incremental"> 
-			<p>Ce qui paraît difficile à modifier</p>
 				<p><i>"the highest level concept of a system in its environment"</i> -- RUP</p>
 				<p><i>"[Architecture] needs to be addressed early in a project (...)"</i> -- Diego Fontdevila
 				<p><i>"Architecture is about the important stuff. Whatever that is."</i> -- Ralph Johnson
@@ -43,50 +42,50 @@
 		</div>
 		<div class="slide">
 			<h1>Kaizen ou Kaikaku ?</h1>
-			<p>Comment identifier qu'une approche incrémentale est insuffisante ?</p>
+			<p>How to identify situations where incremental refactoring is not applicable ?</p>
 			<ul>
-				<li>rupture logicielle</li>
-				<li>contrainte dans le temps</li>
+				<li>software breakthrough</li>
+				<li>time constaint</li>
 				<li>Team building</li>
 			</ul>
 		</div>
 		<div class="slide">
 			<h1>Un Contexte favorable</h1>
-			<p>Des moyens</p>
+			<p>Means : a sponsor</p>
 			<ul>
-				<li>un sponsor a identifié un ROI</li>
-				<li>dispose d'un budget</li>
+				<li>identified a ROI</li>
+				<li>has a budget for it</li>
 			</ul>
-			<p>Une équipe</p>
+			<p>A team</p>
 			<ul>
-				<li>avec une vision</li>
-				<li>maitrisant bien les infrastructures</li>
+				<li>with a vision</li>
+				<li>with good knowledge of business and dev</li>
 			</ul>
-			<p>Une collaboration pour définir un objectif commun</p>
+			<p>Collaboration on a common goal</p>
 			
 		</div>
 		<div class="slide">
-			<h1>Moyens</h1>
+			<h1>Tools</h1>
 			<ul>
-				<li>design sessions/alignement d'équipe</li>
-				<li>augmentation de connaissances</li>
-				<li>prototypage</li>
+				<li>design sessions/team vision building</li>
+				<li>knowledge improvement</li>
+				<li>prototypes</li>
 				<li>set based concurrent design</li>
 				<li>refactoring party</li>
-				<li>preuve/non reg : tests</li>
+				<li>proofs : tests</li>
 			</ul>
 		</div>
 		<div class="slide">
-			<h1>Qu'est-ce qu'un remaniement réussi ?</h1>
+			<h1>When refactoring succeeded ?</h1>
 			<ul>
-				<li>atteinte de l'objectif initial</li>
-				<li>l'équipe s'est approprié les changements effectués</li>
+				<li>initial goal completed</li>
+				<li>team shared models and changes</li>
 			</ul>
-			<p>Indices ou "good smells"</p>
+			<p>good smells</p>
 			<ul>
-				<li>baisse du nombre de lignes de codes</li>
-				<li>baisse du nombre de dépendances</li>
-				<li>emergence d'un concept métier</li>
+				<li>fewer SLOC</li>
+				<li>fewer dependencies</li>
+				<li>new business concept emerged : ubiquitous language</li>
 			</ul>
 		</div>
 		<div class="slide">
@@ -96,19 +95,19 @@
 		<div class="slide">
 			<h1>Exemples</h1>
 			<ul>
-				<li>Condor - VXML/suppr drools</li>
-				<li>AVSP - Cache partagé</li>
-				<li>AVSP - séparation 2 Webapps</li>
-				<li>AVSP - Bus de Données</li>
+				<li>Condor - VXML/drools removal</li>
+				<li>AVSP - Shared catalog cache</li>
+				<li>AVSP - split 2 Webapps</li>
+				<li>AVSP - Stats messaging</li>
 			</ul>
 		</div>
 		<div class="slide">
-			<h1>Apprentissages</h1>
+			<h1>What did we learn ?</h1>
 			<ul>
 				<li>Patterns</li>
 				<ul>
 					<li>code</li>
-					<li>usine logicielle</li>
+					<li>build</li>
 				</ul>
 				<li>Anti-patterns</li>
 			</ul>
@@ -116,28 +115,18 @@
 		<div class="slide">
 			<h1>Patterns</h1>
 			<ul>
-				<li>Suppression de module</li>
-				<li>Fusion de modules</li>
-				<li>Extraction de module</li>
+				<li>Remove module</li>
+				<li>Merge modules</li>
+				<li>Extract module</li>
+				<li>Branch by abstraction</li>
 			<ul>
 		</div>
 		<div class="slide">
-			<h1>Fusion extraction de modules</h1>
-			<div class="incremental"> 
-			  <img src="graphics/fusionExtraction-1.jpg"/> 
-			  <img src="graphics/fusionExtraction-2.jpg"/> 
-			  <img src="graphics/fusionExtraction-3.jpg"/> 
-			  <img src="graphics/fusionExtraction-4.jpg"/> 
-			  <img src="graphics/fusionExtraction-5.jpg"/> 
-			  <img src="graphics/fusionExtraction-6.jpg"/> 
-			  <img src="graphics/fusionExtraction-7.jpg"/> 
-			  <img src="graphics/fusionExtraction-8.jpg"/> 
-			  <img src="graphics/fusionExtraction-9.jpg"/> 
-			  <img src="graphics/fusionExtraction-10.jpg"/> 
-			</div> 
+			<h1>Merge &amp; Extract modules</h1>
+			<a href="http://prezi.com/jfgwuzmut76p/architecture-refactoring/">Condor - drools removal</a>
 		</div>
 		<div class="slide">
-			<h1>Remplacement de fonctionnalité</h1>
+			<h1>Branch by abstraction</h1>
 			<div class="incremental"> 
 			  <img src="graphics/branchByAbstraction-1.jpg"/> 
 			  <img src="graphics/branchByAbstraction-2.jpg"/> 
@@ -156,16 +145,16 @@
 		<div class="slide">
 			<h1>Anti-patterns</h1>
 			<ul>
-				<li>commencer sur barre rouge</li>
-				<li>effet tunnel</li>
-				<li>duplication temporaire qui dure</li>
+				<li>IC red bar</li>
+				<li>tunnel effect</li>
+				<li>"temporary" duplication</li>
 			</ul>
 		</div>
 		<div class="slide">
 			<h1>Perspectives</h1>
 		</div>
 		<div class="slide">
-			<h1>Références</h1>
+			<h1>References</h1>
 			<ul>
 				<li><a href="http://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf">"Who needs an architect"</a> -- <a href="http://martinfowler.com">Martin Fowler</a></li>
 				<li><a href="http://www.sei.cmu.edu/architecture/start/community.cfm">"Community Software Architecture Definitions"</a> -- <a href="http://www.sei.cmu.edu/">Software Engineering Institute</a>
