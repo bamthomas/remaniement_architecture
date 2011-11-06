@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+
+  <title>bamthomas/remaniement_architecture @ GitHub</title>
+
+  <style type="text/css">
+    body {
+      margin-top: 1.0em;
+      background-color: #fff;
+      font-family: Helvetica, Arial, FreeSans, san-serif;
+      color: #000;
+    }
+    #container {
+      margin: 0 auto;
+      width: 700px;
+    }
+    h1 { font-size: 2em; color: #e29a4e; margin-bottom: 3px; }
+    h1 .small { font-size: 0.4em; }
+    h1 a { text-decoration: none }
+    h2 { font-size: 1.5em; color: #e29a4e; }
+    h3 { text-align: center; color: #e29a4e; }
+    a { color: #e29a4e; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+    pre { background: #000; color: #fff; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .footer { text-align:center; padding-top:30px; font-style: italic; }
+  </style>
+
+  <!-- google analytics -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-23699323-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+
+<body>
+  <a href="http://github.com/bamthomas/remaniement_architecture"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
+  <div id="container">
+    <a href="http://www.barreverte.fr/"><img style="border: 0; width: 700px;" src="./barreverte.png" alt="Barre Verte !" /></a>
+
+
+    <h1><a href="http://github.com/bamthomas/remaniement_architecture">Architecture Refactoring - Dramatical changes</a> </h1>
+
+    <div class="description">
+      Des clés pour franchir plus en douceur la prochaine étape importante dans la vie de votre logiciel
+    </div>
+
+    <h2>Contacts</h2>
+    <ul>
+    <li>Bruno Thomas (bruno@barreverte.fr)</li>
+    <li>Jean-Philippe Caruana (jp@barreverte.fr)</li>
+    </ul>
+
+    <h2>Licence</h2>
+    <p>All materials of this session are distributed under <a href="http://creativecommons.org/licenses/by-sa/2.0/fr/"><img style="border: 0;vertical-align:middle;" src="../CC-BY-SA.png" alt="Creative Commons" /></a>
+
+    <h2>Abstract</h2>
+<p>Refactoring allows the code to evolve incrementally, thus enabling the design of an application to adapt itself to its context, while tests guaranty its functionalities. It is necessary to continue to deliver value at the same pace with a growing code base. This is the kaizen of code.</p>
+
+<p>Developers are more and more working on aging software. To cope with an important need for scalability, new features, or organizational changes within little time, refactoring the structure of your software is much needed, while keeping it shippable at the same time. You need radical changes. This is kaikaku.</p>
+
+<p>We will talk about how we inverted a dynamic call routing application from a kernel centric logic to a client/server voicexml architecture in one month, with 100 KLOC of java. Or change all the home made statistic layer of a 160 java KLOC mobile video service with an AMQP broker, continuing to deliver other features with a 5M statistic events per day traffic.</p>
+
+<p>In this session, we will see together :</p>
+<ul>
+<li>how we identified situations where incremental refactoring was not applicable</li>
+<li>the context for this breakthrough to happen</li>
+<li>the tools we used and discovered</li>
+<li>the results of these dramatical changes, what did we learn ?</li>
+<li>some patterns/anti-patterns (extract module, merge-extract module, branch by abstraction…)</li>
+</ul>
+<p> We kept an empiric, test based and teamwork based vision and we think it’s worth sharing with the community.  </p>
+
+    <h2>Slides</h2>
+    <p>You can see the slides online <a href="http://remaniement.barreverte.fr/remaniement_architecture.html">here</a> (javascript on)</p>
+    <p>
+      You can get the source code of this session on github: <a href="http://github.com/bamthomas/remaniement_architecture">bamthomas/remaniement_architecture</a>.
+    </p>
+
+  </div>
+  
+</body>
+</html>
