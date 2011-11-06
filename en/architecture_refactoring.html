@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+	<head>
+		<title>Remaniement d'architecture</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="copyright" content= "&#169; 2011 Bruno Thomas & Jean Philippe Caruana (jp@barreverte.fr, bruno@barreverte.fr) - licence cc by sa" />
+		<meta name="duration" content="50" />
+		<link rel="stylesheet" href="./styles/slidy.css" type="text/css" />
+		<link rel="stylesheet" href="./styles/zen.css" type="text/css" />
+		<script src="./scripts/slidy.js" charset="utf-8" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="slide">
+			<h1>Remaniement d'achitecture</h1>
+			<p><em>Des clés pour franchir plus en douceur la prochaine étape importante dans la vie de votre logiciel</em></p>
+			<div class="bottom">
+				<p>Développeurs agiles chez Orange - Multimedia Business Services</p>
+				<ul>
+					<li>Bruno Thomas</li>
+					<li>Jean-Philippe Caruana</li>
+				</ul>
+				<p>Co-animateurs du blog <a href="http://barreverte.fr">barre verte !</a>
+			</div>
+		</div>
+		<div class="slide">
+			<h1>Héritage (Legacy)</h1>
+			<p>Living and working with aging software -- Ralph Johnson QCon 2010</p>
+			<ul>
+				<li>Ancien code : difficile à comprendre &amp; modifier</li>
+				<li>"Root Canal v.s. Flossing"</li>
+			</ul>
+		</div>
+		<div class="slide">
+			<h1>Architecture</h1>
+			<div class="incremental"> 
+			<p>Ce qui paraît difficile à modifier</p>
+				<p><i>"the highest level concept of a system in its environment"</i> -- RUP</p>
+				<p><i>"[Architecture] needs to be addressed early in a project (...)"</i> -- Diego Fontdevila
+				<p><i>"Architecture is about the important stuff. Whatever that is."</i> -- Ralph Johnson
+				<p><i>"Things that people perceive as hard to change"</i> -- Martin Fowler
+			</div>
+		</div>
+		<div class="slide">
+			<h1>Kaizen ou Kaikaku ?</h1>
+			<p>Comment identifier qu'une approche incrémentale est insuffisante ?</p>
+			<ul>
+				<li>rupture logicielle</li>
+				<li>contrainte dans le temps</li>
+				<li>Team building</li>
+			</ul>
+		</div>
+		<div class="slide">
+			<h1>Un Contexte favorable</h1>
+			<p>Des moyens</p>
+			<ul>
+				<li>un sponsor a identifié un ROI</li>
+				<li>dispose d'un budget</li>
+			</ul>
+			<p>Une équipe</p>
+			<ul>
+				<li>avec une vision</li>
+				<li>maitrisant bien les infrastructures</li>
+			</ul>
+			<p>Une collaboration pour définir un objectif commun</p>
+			
+		</div>
+		<div class="slide">
+			<h1>Moyens</h1>
+			<ul>
+				<li>design sessions/alignement d'équipe</li>
+				<li>augmentation de connaissances</li>
+				<li>prototypage</li>
+				<li>set based concurrent design</li>
+				<li>refactoring party</li>
+				<li>preuve/non reg : tests</li>
+			</ul>
+		</div>
+		<div class="slide">
+			<h1>Qu'est-ce qu'un remaniement réussi ?</h1>
+			<ul>
+				<li>atteinte de l'objectif initial</li>
+				<li>l'équipe s'est approprié les changements effectués</li>
+			</ul>
+			<p>Indices ou "good smells"</p>
+			<ul>
+				<li>baisse du nombre de lignes de codes</li>
+				<li>baisse du nombre de dépendances</li>
+				<li>emergence d'un concept métier</li>
+			</ul>
+		</div>
+		<div class="slide">
+			<h1>PDCA</h1>
+			 <img src="graphics/pdca.png"/>
+		</div>
+		<div class="slide">
+			<h1>Exemples</h1>
+			<ul>
+				<li>Condor - VXML/suppr drools</li>
+				<li>AVSP - Cache partagé</li>
+				<li>AVSP - séparation 2 Webapps</li>
+				<li>AVSP - Bus de Données</li>
+			</ul>
+		</div>
+		<div class="slide">
+			<h1>Apprentissages</h1>
+			<ul>
+				<li>Patterns</li>
+				<ul>
+					<li>code</li>
+					<li>usine logicielle</li>
+				</ul>
+				<li>Anti-patterns</li>
+			</ul>
+		</div>
+		<div class="slide">
+			<h1>Patterns</h1>
+			<ul>
+				<li>Suppression de module</li>
+				<li>Fusion de modules</li>
+				<li>Extraction de module</li>
+			<ul>
+		</div>
+		<div class="slide">
+			<h1>Fusion extraction de modules</h1>
+			<div class="incremental"> 
+			  <img src="graphics/fusionExtraction-1.jpg"/> 
+			  <img src="graphics/fusionExtraction-2.jpg"/> 
+			  <img src="graphics/fusionExtraction-3.jpg"/> 
+			  <img src="graphics/fusionExtraction-4.jpg"/> 
+			  <img src="graphics/fusionExtraction-5.jpg"/> 
+			  <img src="graphics/fusionExtraction-6.jpg"/> 
+			  <img src="graphics/fusionExtraction-7.jpg"/> 
+			  <img src="graphics/fusionExtraction-8.jpg"/> 
+			  <img src="graphics/fusionExtraction-9.jpg"/> 
+			  <img src="graphics/fusionExtraction-10.jpg"/> 
+			</div> 
+		</div>
+		<div class="slide">
+			<h1>Remplacement de fonctionnalité</h1>
+			<div class="incremental"> 
+			  <img src="graphics/branchByAbstraction-1.jpg"/> 
+			  <img src="graphics/branchByAbstraction-2.jpg"/> 
+			  <img src="graphics/branchByAbstraction-3.jpg"/> 
+			  <img src="graphics/branchByAbstraction-4.jpg"/> 
+			  <img src="graphics/branchByAbstraction-5.jpg"/> 
+			  <img src="graphics/branchByAbstraction-6.jpg"/> 
+			  <img src="graphics/branchByAbstraction-7.jpg"/> 
+			  <img src="graphics/branchByAbstraction-8.jpg"/> 
+			  <img src="graphics/branchByAbstraction-9.jpg"/> 
+			  <img src="graphics/branchByAbstraction-10.jpg"/> 
+			  <img src="graphics/branchByAbstraction-11.jpg"/> 
+			  <img src="graphics/branchByAbstraction-12.jpg"/> 
+			</div> 
+		</div>
+		<div class="slide">
+			<h1>Anti-patterns</h1>
+			<ul>
+				<li>commencer sur barre rouge</li>
+				<li>effet tunnel</li>
+				<li>duplication temporaire qui dure</li>
+			</ul>
+		</div>
+		<div class="slide">
+			<h1>Perspectives</h1>
+		</div>
+		<div class="slide">
+			<h1>Références</h1>
+			<ul>
+				<li><a href="http://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf">"Who needs an architect"</a> -- <a href="http://martinfowler.com">Martin Fowler</a></li>
+				<li><a href="http://www.sei.cmu.edu/architecture/start/community.cfm">"Community Software Architecture Definitions"</a> -- <a href="http://www.sei.cmu.edu/">Software Engineering Institute</a>
+				<li><a href="http://www.agilemodeling.com/">"Agile Modeling"</a> -- <a href="http://www.ambysoft.com/">Scott Ambler</a></li>
+				<li><a href="http://www.natureoforder.com/">"Nature of Order"</a> -- Christopher Alexander et <a href="http://www.regismedina.com/articles/fr/christopher-alexander">adaptation</a> <a href="http://www.regismedina.com">Régis Médina</a></li>
+				<li>"Design of Design" -- Frederick Brooks</li>
+				<li><a href="http://qconlondon.com/dl/qcon-london-2010/slides/RalphJohnson_LivingAndWorkingWithAgingSoftware.pdf">"Living software Aging software"</a> -- <a href="http://www.cincomsmalltalk.com/userblogs/ralph/blogView">Ralph Johnson</a></li>
+				<li><a href="http://oreilly.com/catalog/9780596517984">"Beautiful Architecture"</a> -- Diomidis Spinellis , Georgios Gousios </li>
+				<li>"Brutal Refactoring" -- Michael Feathers (à sortir)</li>
+				<li><a href="http://xp123.com/articles/set-based-concurrent-engineering/">"Set based concurrent design"</a> -- <a href="http://xp123.com/">XP123</a>
+			</ul>
+		</div>
+		
+	</body>
+</html>
