@@ -1,0 +1,11 @@
+div.slide h1 {
+  background-color: #6E6E6E;
+  color: white;
+  padding: 0.5em 1em;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+div.slide ul {
+  margin-left: 2em;
+}
